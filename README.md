@@ -11,4 +11,5 @@ In the _worker.js_ file you can find a simple script that gets the text from the
 ## How to do it?
 - Create a _worker_ in the Cloudflare dashboard, name it whatever you want, and paste the code from _worker.js_ file into _worker.js_ file in the cloudflare's worker.
 - Change the _TOKEN_ and _CHAT_ID_ with your data, you can either put them directly in the script or use an environment variable.
-- Deploy the worker.
+- Deploy the worker and get the its url.
+- Now you should be able to send a message to the user by using the _text_ prameter after the url; EX: ```https://my-worker-name.workers.dev/?text=hi mom!```.
