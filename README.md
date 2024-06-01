@@ -14,3 +14,18 @@ In the _worker.js_ file you can find a simple script that gets the text from the
 - Deploy the worker and get the its url.
 - Now you should be able to send a message to the user by using the _text_ parameter after the url; <br/>
   EX: ```https://my-worker-name.workers.dev/?text=hi mom!```.
+
+## Automate it in an actuall application
+So I'm going to use Django to send the admin a notice when a user create an account.
+```
+...
+### acount has been created
+worker_url = 'https://my-worker-name.workers.dev/'
+text = 'hi mom, someone just created a new account!'
+try:
+  response = requests.get(f'{worker_url}?text={text}')
+  return JsonResponse(response.json(), status=response.status_code)
+except requests.RequestException as e:
+  return JsonResponse({'error': str(e)}, status=500)
+...
+```
