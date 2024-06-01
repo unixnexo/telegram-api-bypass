@@ -17,8 +17,8 @@ In the _worker.js_ file you can find a simple script that gets the text from the
 
 ## Automate it in an actuall application
 So I'm going to use Django to send the admin a message when a user create an account.
-```
-... diff
+```diff
+...
 ### acount has been created
 worker_url = 'https://my-worker-name.workers.dev/'
 text = 'hi mom, someone just created a new account!'
