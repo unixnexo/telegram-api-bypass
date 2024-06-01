@@ -29,3 +29,4 @@ except requests.RequestException as e:
   return JsonResponse({'error': str(e)}, status=500)
 ...
 ```
+_Don't forget to install "requests" by ```pip install requests```, and import both ```from django.http import JsonResponse``` and ```import requests```_
