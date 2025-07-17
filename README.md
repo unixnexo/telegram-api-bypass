@@ -31,4 +31,4 @@ except requests.RequestException as e:
 ```
 _Don't forget to install "requests" by ```pip install requests```, and import both ```from django.http import JsonResponse``` and ```import requests```_
 
-Here's a more beginner friendly way of explaning everything https://unixnexo.github.io/src/blog/Using_Telegram_API_even_if_the_host_doesn't_let_you_to.html
+Here's a more beginner friendly way of explaning everything [https://unixnexo.github.io/src/blog/Using_Telegram_API_even_if_the_host_doesn't_let_you_to.html](https://unixnexo.github.io/unixnexo-old-portfolio/src/blog/Using_Telegram_API_even_if_the_host_doesn't_let_you_to.html)
